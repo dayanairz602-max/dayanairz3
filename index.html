@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Dayana Fashion — Дизайнерские платья</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Didot", serif;
+            background: #f7f3ee; /* светлый бежевый */
+            color: #4b3f36;
+            text-align: center;
+        }
+
+        header {
+            background: #e8dfd6; /* нежный бежевый */
+            padding: 30px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 35px 20px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #6c5a4c;
+            margin-bottom: 15px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Галерея */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #5a4f46;
+        }
+
+        /* Кнопка */
+        button {
+            margin-top: 18px;
+            padding: 12px 22px;
+            background: #c9b8a7; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #b8a290;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 14px;
+            color: #7d6f62;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    Dayana Fashion — дизайнерские платья
+</header>
+
+<div class="section">
+    <h2>О бренде</h2>
+    <p>
+        Нежные, элегантные и уникальные дизайнерские платья, созданные для девушек,
+        которые ценят стиль, утончённость и индивидуальность.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Коллекция</h2>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="photo1.jpeg" alt="">
+            <p>Платье «Кремовый шёлк»</p>
+        </div>
+
+        <div class="item">
+            <img src="photo2.jpeg" alt="">
+            <p>Платье «Песочная роза»</p>
+        </div>
+
+        <div class="item">
+            <img src="photo3.jpeg" alt="">
+            <p>Платье «Бежевая гармония»</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Контакты</h2>
+    <p>Для заказа, сотрудничества или пошива на заказ:</p>
+    <button onclick="alert('Instagram: @dayana.fashion')">Открыть Instagram</button>
+</div>
+
+<footer>
+    © 2025 Dayana Fashion — авторские дизайнерские платья
+</footer>
+
+</body>
+</html>
